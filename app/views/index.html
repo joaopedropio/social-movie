@@ -1,0 +1,24 @@
+<html>
+  <head>
+  <title>Adaptive Streaming in HTML5</title>
+  <script src="js/dash.all.min.js"></script>
+  <style>
+    video {
+       width: 720px;
+       height: 480px;
+    }
+  </style>
+  </head>
+  <body onload="setupVideo()" align='center'>
+    <h1>Adaptive Streaming with HTML5</h1>
+    <video id="videoPlayer" controls></video>
+  </body>
+  <script>
+    // setup the video element and attach it to the Dash player
+    function setupVideo() {
+      var url = "videos/david/stream.mpd";
+      var player = dashjs.MediaPlayer().create();
+      player.initialize(document.querySelector("#videoPlayer"), url, true);
+    }
+  </script>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "social-movie",
+  "main": "server.js",
+  "description": "A social network of adicted in movies",
+  "version": "0.0.1",
+  "private": false,
+  "engines": {
+    "node": "6.*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaopedropio/social-movie"
+  },
+  "dependencies": {
+    "express": "^4.15.x"
+  },
+  "author": "Joao Pedro (base app copied from get-started-node from IBM",
+  "license": "Apache-2.0"
+}
